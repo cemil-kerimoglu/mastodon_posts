@@ -1,0 +1,11 @@
+name: mastodon_ds
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pandas
+  - pyyaml
+  - requests
+  - mastodon.py
+  - jupyterlab
+  - tqdm
