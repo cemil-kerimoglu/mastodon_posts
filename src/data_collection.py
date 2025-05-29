@@ -122,10 +122,10 @@ if __name__ == "__main__":
 
     since = datetime(2025, 5, 1, tzinfo=timezone.utc) 
     until = datetime(2025, 5, 31, 23, 59, 59, tzinfo=timezone.utc)
-    fetch_local_statuses_in_date_range(masto, since, until, out_path="data/raw/statuses_may2025_20k.csv", max_posts=20000)
+    fetch_local_statuses_in_date_range(masto, since, until, out_path="data/raw/statuses_may2025_3k.csv", max_posts=3000)
 
     # example: fetch my own followers
-    my_id = masto.account_verify_credentials()["id"]
-    fetch_followers_for_account(masto, my_id)
+    # my_id = masto.account_verify_credentials()["id"]
+    # fetch_followers_for_account(masto, my_id)
 
 
